@@ -1,0 +1,7 @@
+.highlight {
+    --code-block-bg: #282c34;
+    /* --code-block-bg: black; */
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid black;
+    padding: 1rem 2rem;
+}

@@ -1,0 +1,121 @@
+baseURL: "https://blog.haidong.technology/"
+title: Haidong.Technology
+paginate: 5
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+outputs:
+  home:
+    - HTML
+    - JSON
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Haidong.Technology
+  description: Processing a World of Possibilities
+  keywords: [Haidong Pang, Blog, Technology]
+  author: Haidong Pang
+  images: ["/images/avatar.png"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: light
+  disableThemeToggle: true
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showToc: true
+  tocOpen: false
+
+  assets:
+    disableHLJS: true
+    # disableFingerprinting: true
+    favicon: "/icon/favicon.ico"
+    favicon16x16: "/icon/favicon-16x16.png"
+    favicon32x32: "/icon/favicon-32x32.png"
+    apple_touch_icon: "/icon/favicon-app_touch_icon.png"
+    safari_pinned_tab: "/icon/favicon-safari_pinned_tab.png"
+
+  label:
+    text: "Me"
+
+  # profile-mode
+  profileMode:
+    enabled: true
+    title: Haidong Pang
+    subtitle: "Processing a World of Possibilities"
+    imageUrl: "/images/avatar.png"
+    imageWidth: 240
+    imageHeight: 240
+    imageTitle: Haidong Pang
+
+  socialIcons:
+    - name: email
+      url: "mailto:me@haidong.technology"
+    - name: github
+      url: "https://github.com/HaidongPang"
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: Posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: Categories
+      name: Categories
+      url: /categories/
+      weight: 20
+    - identifier: Tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: TimeLine
+      name: TimeLine
+      url: /timeline/
+      weight: 40
+    - identifier: Search
+      name: Search
+      url: /search/
+      weight: 50
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: false
+markup:
+  highlight:
+    # anchorLineNos: false
+    # codeFences: true
+    # guessSyntax: true
+    lineNos: false
+    noClasses: false
+    tabWidth: 4
+    style: github
